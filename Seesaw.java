@@ -1,5 +1,3 @@
-package TwelveIslanderRiddle;
-
 public class Seesaw {
     private int attempts;
 
