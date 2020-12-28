@@ -85,6 +85,11 @@ public class TwelveIslanderSolver {
         System.out.println("\nWeighing Group 1 and 3...");
         int newSeesawResult = this.seesaw.weigh(threeGroups[0], threeGroups[2]);
         if (seesawResult == newSeesawResult) {
+            if (newSeesawResult < 0) {
+                System.out.println("Group 1 is lighter than Group 3!!!");
+            } else {
+                System.out.println("Group 1 is heavier than Group 3!!!");
+            }
             System.out.println("Group 1 contains the odd weighted islander!!!");
         } else {
             System.out.println("Group 2 contains the odd weighted islander!!!");

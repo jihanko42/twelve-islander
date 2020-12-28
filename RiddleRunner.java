@@ -1,6 +1,7 @@
 public class RiddleRunner {
     public static void main(String[] args) {
-        TwelveIslander twelveIslander = new TwelveIslander(5);
+        int designated = Integer.parseInt(args[0]);
+        TwelveIslander twelveIslander = new TwelveIslander(designated);
         twelveIslander.runRiddle();
     }
 }
